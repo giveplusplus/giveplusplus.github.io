@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+      padding: 30px;
+    }
+    #header
+    {
+      font-family: 'Montserrat';
+      color: #6dcbbe;
+    }
+    #nameboxid
+    {
+      width:350px;
+      font-size:15px;
+
+    }
+    #emailboxid
+    {
+      width:720px;
+      font-size:15px;
+    }
+    #messagetextboxid
+    {
+      height:75px;
+      width: 700px;
+      font-size:15px;
+      overflow: auto;
+      resize:both;
+    }
+    #submit-button{
+      border-radius: 12px;
+      padding: 10px 24px;
+      font-size: 15px;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #cba901;
+      border: 2px solid #cba901;
+      background-color: #FFFFFF
+    }
+    #submit-button:hover{
+      transition: 0.5s;
+      color: #FFFFFF;
+      border: 2px solid #cba901;
+      background-color: #cba901
+    }
+    .col-2 {
+      width: 360px;
+      float: left;
+      margin: 0;
+    }
+    .col-1 {
+      width: 720px;
+
+    }
+    h4 a{
+      color: #cba901;
+    }
+    input[type=text] {
+      height: 40px;
+      padding: 12px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      outline: none;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    input[type=text]:focus {
+      border: 1px solid #555;
+    }
+    textarea{
+      padding: 12px;
+      width: 500px;
+      height: 75px;
+      font-size:15pt;
+      font-family: 'Roboto Condensed', sans-serif;
+      border: 1px solid #ccc;
+      transition: 0.5s;
+    }
+    textarea:focus{
+      border: 1px solid #555;
+      outline: none;
+    }
+    h4{
+      margin:0;
+      padding: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="header">Contact Us</h1>
+
+  <h4 style="">Thank you for your interest in Give++! We deeply value the insight you give. We look forward to hearing from you!</h4><br><br>
+
+  <h4>Email: <a href="mailto:contact@giveplusplus.org">contact@giveplusplus.org</a></h4><br>
+
+  <form method="post" action="mailto:contact@giveplusplus.org" enctype="text/plain" id="form">
+    <h4>Name*</h4>
+    <div class="col-2">
+      <input type="text" name="firstname" id="nameboxid" required><br>
+      First<br>
+    </div>
+    <div class="col-2">
+      <input type="text" name="lastname" id="nameboxid" required><br>
+      Last<br><br>
+    </div>
+    <div class="col-1">
+      <h4>E-mail*</h4>
+      <input type="text" name="mail" id="emailboxid" required><br><br>
+    </div>
+    <div class="col-1">
+      <h4>Subject*</h4>
+      <input type="text" name="mail" id="emailboxid" required><br><br>
+    </div>
+    <div class="col-1">
+      <h4>Comment or Message*</h4>
+      <textarea type="text" name="message" id="messagetextboxid" required></textarea><br><br>
+    </div>
+    <div class="col-1">
+      <input type="submit" name="submit" value="Send" id="submit-button">
+    </div>
+  </form>
+
+</body>
+</html>

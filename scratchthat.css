@@ -4,7 +4,7 @@
 }
 
 .title{
-  padding-top: 30px;
+  padding-top: 50px;
   text-align: center;
   font-family: 'montserratregular', sans-serif;
   font-style: normal;
@@ -303,4 +303,9 @@ time.icon span
 :root {
   --primary: #6dcbbe;
   --secondary: #cba901;
+}
+
+.nav.navbar-nav li{
+  font-family: 'Roboto Condensed';
+  font-size: 15px;
 }

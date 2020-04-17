@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <title>Coding Classes</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+         $(function(){
+              $('#navbar').load('navbarTemplate.html');
+         });
+    </script>
+  </head>
+
     <style media="screen">
       #header
       {
@@ -23,7 +35,7 @@
 
       }
 
-      img{
+      .flyer img{
         width:35%;
         float: left;
         margin-bottom: 30px;
@@ -33,6 +45,7 @@
       body {
         font-family: 'Roboto Condensed', sans-serif;
         padding: 1%;
+        padding-top:50px;
       }
       body a{
         color: var(--secondary);
@@ -41,8 +54,13 @@
       --primary: #6dcbbe;
       --secondary: #cba901;
       }
+      .nav.navbar-nav li{
+        font-family: 'Roboto Condensed';
+        font-size: 15px;
+      }
     </style>
   <body>
+    <div id="navbar"></div>
     <h1 id="header">Upcoming Classes</h1><br>
     <div class="flyer">
       <img src="java_class_2020.png" alt="Free online java classes, which go from April 25 to June 27." float="left"/>
